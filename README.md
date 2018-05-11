@@ -14,3 +14,5 @@ Google Docs OAuth Setup (Instructions From Google):
   http://gspread.readthedocs.io/en/latest/oauth2.html
   You must activate both the Drive and Sheets APIs in the Google Developers Console
   The downloaded .json file must be renamed to client_secret.json and stored in the script folder
+
+  - Insert the Sheetname containing the FAQ at FaqSheet = " "
