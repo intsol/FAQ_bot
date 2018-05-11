@@ -3,10 +3,10 @@ A Simple Python Telegram Bot for using #tags to send description text to channel
 
 Library Requirements:
   - Telegram Python Bot
-  - Google gspread, oauth
+  - Google gspread, oauth2client
 
 Telegram Setup
-  - register a new bot using BotFather
+  - Register a new bot using BotFather
   - Insert the generated Bot Key into the script at BOTKey = " "
   - Add the bot to the required group and promote to Admin
   
