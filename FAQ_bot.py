@@ -11,7 +11,7 @@
 
 from telegram.ext import Updater, Handler, CommandHandler, MessageHandler, InlineQueryHandler, Filters
 
-BOTKEY   = 'Insert bot Father Key Here'
+BotKey   = 'Insert bot Father Key Here'
 FaqSheet = 'insert Google Sheet Name Here'
 
 Faq = {}  # tuple for storing the FAQ, indexed by hash tag
@@ -83,7 +83,7 @@ Load_faq()      # read the FAQ from sheet
 #
 # The following is Telegram Python Bot startup code - Go to Bot Father to register Bot Key
 #
-updater = Updater(BOTKEY)
+updater = Updater(BotKey)
 
 dp = updater.dispatcher
 
