@@ -11,6 +11,9 @@
 
 from telegram.ext import Updater, Handler, CommandHandler, MessageHandler, InlineQueryHandler, Filters
 
+BOTKEY   = 'Insert bot Father Key Here'
+FaqSheet = 'insert Google Sheet Name Here'
+
 Faq = {}  # tuple for storing the FAQ, indexed by hash tag
 
 # Google Docs Imports
@@ -30,7 +33,7 @@ def Load_faq():
 
     # Find a workbook by name and open the first sheet
     # Make sure you use the right name here.
-    sheet = client.open('SWITCHEO FAQs').sheet1
+    sheet = client.open(FaqSheet).sheet1
 
     # Extract and print all of the values
     keys   = sheet.col_values(1)
@@ -80,7 +83,7 @@ Load_faq()      # read the FAQ from sheet
 #
 # The following is Telegram Python Bot startup code - Go to Bot Father to register Bot Key
 #
-updater = Updater('Insert bot Father Key Here')
+updater = Updater(BOTKEY)
 
 dp = updater.dispatcher
 
